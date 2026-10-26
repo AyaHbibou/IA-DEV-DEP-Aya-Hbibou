@@ -252,14 +252,14 @@ python -m pytest -q
 **Obtenu** :
 
 ```text
-À compléter
+`0 erreur(s), 0 avertissement(s)`, puis `38 passed`
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
-> À compléter.
+> les tests ont passe avec succes
 
 ![T6 : pytest final](captures/tp1-t6-pytest.png)
 
