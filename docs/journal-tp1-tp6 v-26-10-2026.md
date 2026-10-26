@@ -129,7 +129,7 @@ Python 3.11.0 , 34 passed, 4 skipped
 
 **Commentaire** (que réclament les trois échecs, et pourquoi quatre tests sont ignorés ?) :
 
-> À compléter.
+> Aucun echec n'est obtenu.
 
 ![T1 : pytest au départ](captures/tp1-t1-pytest.png)
 
@@ -173,10 +173,10 @@ python -m pytest -q
 **Obtenu** (extrait de `git status`, dernière ligne de pytest) :
 
 ```text
-À compléter
+`git status` ne liste ni `.venv/`, ni `.env`, ni fichier `.joblib` , pytest affiche 38  passed
 ```
 
-- [ ] Conforme
+- [N] Conforme
 
 **Commentaire** (quel test échoue encore, et pourquoi ?) :
 
