@@ -228,10 +228,10 @@ python -m pytest tests/test_git_history.py -q
 **Obtenu** :
 
 ```text
-À compléter
+  Aya HBIBOU / AYA Hbibou, e pytest affiche que 3 passed 
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
