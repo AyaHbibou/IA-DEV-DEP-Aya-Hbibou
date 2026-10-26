@@ -4,10 +4,10 @@
 
 | | Membre A | Membre B |
 | --- | --- | --- |
-| Nom | Aya Hbibou | Aya Hbibou |
-| Compte GitHub |  | AyaHbibou| AyaHbibou
+| Nom | *à compléter* | *à compléter* |
+| Compte GitHub | *à compléter* | *à compléter* |
 
-**Dépôt** : https://github.com/AyaHbibou/IA-DEV-DEP-Aya-Hbibou
+**Dépôt** : *adresse du dépôt GitHub, à compléter*
 
 ## Comment remplir ce journal
 
@@ -51,14 +51,17 @@ git config --global user.name
 
 **Attendu** : une version 3.11 dans la liste, `Python 3.11.x`, une version de Git, le nom du membre A.
 
-**Obtenu** : Python 3.11.0 , git version 2.47.1.windows.2 ,Aya HBIBOU
+**Obtenu** :
 
+```text
+À compléter
+```
 
-- [x] Conforme
+- [ ] Conforme
 
 **Commentaire** :
 
-> resultat obtenu et le meme que l attendue 
+> À compléter.
 
 ![Poste du membre A](captures/tp0-poste-membre-a.png)
 
@@ -71,18 +74,21 @@ git --version
 git config --global user.name
 ```
 
-**Attendu** : une version 3.11 dans la liste, `Python 3.11.x`, une version de Git, le nom du membre A.
+**Attendu** : une version 3.11, `Python 3.11.x`, une version de Git, le nom du membre B, différent de celui du membre A.
 
-**Obtenu** : Python 3.11.0 , git version 2.47.1.windows.2 ,Aya HBIBOU
+**Obtenu** :
 
+```text
+À compléter
+```
 
-- [x] Conforme
+- [ ] Conforme
 
 **Commentaire** :
 
-> resultat obtenu et le meme que l attendue 
+> À compléter.
 
-![Poste du membre A](captures/tp0-poste-membre-b.png)
+![Poste du membre B](captures/tp0-poste-membre-b.png)
 
 ---
 
@@ -97,14 +103,17 @@ Get-ChildItem -Force
 **Attendu** : les sept dossiers `app`, `data`, `docs`, `models`, `scripts`, `tests`, `ui`, ainsi que `.github` et `.gitignore`.
 
 **Obtenu** :
-les sept dossiers `app`, `data`, `docs`, `models`, `scripts`, `tests`, `ui`.
 
+```text
+À compléter
+```
 
-- [x] Conforme
+- [ ] Conforme
 
 **Commentaire** :
 
-> resultat obtenu et le meme que l attendue 
+> À compléter.
+
 ![T0 : structure du kit](captures/tp1-t0-structure.png)
 
 ### T1 · L'environnement et le point de départ (membre A)
@@ -119,13 +128,15 @@ python scripts/check_setup.py
 python -m pytest -q
 ```
 
-**Attendu** : `Python 3.11.0` ; une installation sans erreur ; le diagnostic signale encore une erreur et des avertissements ; pytest affiche `3 failed, 31 passed, 4 skipped`.
+**Attendu** : `Python 3.11.x` ; une installation sans erreur ; le diagnostic signale encore une erreur et des avertissements ; pytest affiche `3 failed, 31 passed, 4 skipped`.
 
 **Obtenu** (version de Python, résumé du diagnostic, dernière ligne de pytest) :
 
-Python 3.11.0 , 34 passed, 4 skipped 
+```text
+À compléter
+```
 
-- [N] Conforme
+- [ ] Conforme
 
 **Commentaire** (que réclament les trois échecs, et pourquoi quatre tests sont ignorés ?) :
 
@@ -144,10 +155,11 @@ python -m pytest -q
 
 **Obtenu** :
 
+```text
+À compléter
+```
 
-12 passed ,35 passed, 3 skipped
-
-- [N] Conforme
+- [ ] Conforme
 
 **Commentaire** (l'approche retenue pour chacun des trois cas, et les deux critères qui la justifient) :
 
@@ -172,15 +184,13 @@ python -m pytest -q
 
 **Obtenu** (extrait de `git status`, dernière ligne de pytest) :
 
-```text
-À compléter
-```
+`git status` ne liste ni `.venv/`, ni `.env`, ni fichier `.joblib` , pytest affiche 38 passed
 
-- [ ] Conforme
+- [N] Conforme
 
 **Commentaire** (quel test échoue encore, et pourquoi ?) :
 
-> À compléter.
+> je n'ai aucun erreur ou aucun test qui a echoue 
 
 ![T3 : le dépôt sur GitHub](captures/tp1-t3-depot-github.png)
 
