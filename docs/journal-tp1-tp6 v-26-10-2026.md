@@ -5,7 +5,7 @@
 | | Membre A | Membre B |
 | --- | --- | --- |
 | Nom | Aya Hbibou | Aya Hbibou |
-| Compte GitHub |  | AyaHbibou| AyaHbibou
+| Compte GitHub | AyaHbibou | AyaHbibou| 
 
 **Dépôt** : https://github.com/AyaHbibou/IA-DEV-DEP-Aya-Hbibou
 
