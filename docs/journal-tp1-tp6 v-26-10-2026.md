@@ -200,14 +200,15 @@ python scripts/check_setup.py
 **Obtenu** :
 
 ```text
-À compléter
+Résultat : 0 erreur(s), 0 avertissement(s)
+Tout est en place.
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** :
 
-> À compléter.
+> Le dossier est clone ainsi que les packages sont installee dans l'environnement
 
 ![T4 : diagnostic du membre B](captures/tp1-t4-check-setup-b.png)
 
