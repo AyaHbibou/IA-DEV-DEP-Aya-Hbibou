@@ -1,0 +1,10 @@
+{
+  "source": "allocine",
+  "date": "2026-11-02",
+  "n_train": 16000,
+  "n_test": 4000,
+  "f1_macro": 0.9205,
+  "accuracy": 0.9205,
+  "recall_negative": 0.9113,
+  "seuil_f1": 0.85
+}
