@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+"""Prédiction unitaire : la fonction que l'API de la semaine 3 appellera.
+
+Usage :
+  python src/predict.py "Livraison rapide, très satisfait"
+  >>> from predict import predict ; predict("texte")
+"""
+import os
+import sys
+from functools import lru_cache
+from pathlib import Path
+
+import joblib
+
+RACINE = Path(__file__).resolve().parents[1]
+
+
+def chemin_modele() -> Path:
+    """Le modèle : la variable SENTIMENT_MODELE si elle est définie, sinon models/sentiment.joblib."""
+    return Path(os.environ.get("SENTIMENT_MODELE") or RACINE / "models" / "sentiment.joblib")
+
+
+MODELE = chemin_modele()
+
+
+@lru_cache(maxsize=1)
+def charger_modele():
+    """Chargé une seule fois par processus, pas à chaque appel."""
+    if not MODELE.exists():
+        raise FileNotFoundError(
+            f"Modèle introuvable : {MODELE}. Deux façons d'y remédier : "
+            "lancez `python src/train.py` pour le produire, ou définissez la variable "
+            "d'environnement SENTIMENT_MODELE avec le chemin d'un fichier .joblib existant."
+        )
+    return joblib.load(MODELE)
+
+
+def predict(texte: str) -> dict:
+    """Renvoie {'label': 'positive'|'negative', 'score': float}."""
+    if not isinstance(texte, str) or not texte.strip():
+        raise ValueError("texte vide")
+    pipeline = charger_modele()
+    etiquette = pipeline.predict([texte])[0]
+    score = float(pipeline.predict_proba([texte]).max())
+    return {"label": etiquette, "score": round(score, 4)}
+
+
+def main() -> int:
+    if len(sys.argv) < 2:
+        print(__doc__)
+        return 2
+    resultat = predict(" ".join(sys.argv[1:]))
+    print(f"{resultat['label']} (confiance {resultat['score']:.0%})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,16 +1,12 @@
 """Raccord entre l'API et le modèle entraîné au TP2.
 
 L'API n'entraîne rien et ne connaît pas scikit-learn : elle appelle la fonction
-predict() de src/predict.py, qui charge models/sentiment.joblib une seule fois.
+predict() du paquet sentiment_app, qui charge le modèle une seule fois.
 """
 import os
-import sys
-from pathlib import Path
 
-RACINE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(RACINE / "src"))
-from predict import charger_modele  # noqa: E402  (fonctions du TP2)
-from predict import predict as _predict  # noqa: E402
+from sentiment_app.predict import charger_modele
+from sentiment_app.predict import predict as _predict
 
 # Sous ce score de confiance, le modèle ne tranche pas : l'étiquette devient INDETERMINE.
 SEUIL_ABSTENTION = float(os.environ.get("SEUIL_ABSTENTION", "0.60"))
@@ -34,5 +30,5 @@ class SentimentClassifier:
 
 
 def load_model() -> SentimentClassifier:
-    """Construit le classifier (le cache de chargement est dans src/predict.py)."""
+    """Construit le classifier (le cache de chargement est dans sentiment_app/predict.py)."""
     return SentimentClassifier()
