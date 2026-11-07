@@ -14,6 +14,7 @@ pytestmark = pytest.mark.skipif(not MODELE.exists(), reason="modèle non produit
 @pytest.fixture(scope="module")
 def client():
     from fastapi.testclient import TestClient
+
     from api.main import app
     with TestClient(app) as c:  # le "with" déclenche lifespan (chargement du modèle)
         yield c

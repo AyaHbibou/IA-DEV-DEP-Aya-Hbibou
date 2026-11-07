@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - name: Environnement virtuel et dépendances
-        run: python -m venv .venv && . .venv/bin/activate && pip install pandas scikit-learn pytest "fastapi==0.115.*" "httpx==0.27.*" "uvicorn==0.30.*"
+        run: python -m venv .venv && . .venv/bin/activate && pip install pandas scikit-learn pytest "fastapi==0.115.*" "httpx==0.27.*" "uvicorn==0.30.*" "streamlit==1.39.*"
       - name: Diagnostic
         run: . .venv/bin/activate && python scripts/check_setup.py
       - name: Modèle de démonstration, pour les tests de l'API (TP3)

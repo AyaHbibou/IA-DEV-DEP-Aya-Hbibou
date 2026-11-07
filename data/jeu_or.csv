@@ -1,1 +1,21 @@
 text,attendu,difficulte,erreur_connue
+"Le colis est arrivé rapidement et le produit fonctionne très bien",POSITIVE,,
+"Je ne suis absolument pas satisfait de cet achat",NEGATIVE,négation,"négation « ne ... absolument pas » non captée"
+"Génial, le téléphone s'éteint tout seul après cinq minutes",NEGATIVE,ironie,
+"La qualité est bonne mais le prix est beaucoup trop élevé",NEGATIVE,avis_mitigé,"avis mixte, reproche final (prix) dominé par « bonne »"
+"Le match était passionnant jusqu'à la dernière minute",POSITIVE,autre_domaine,
+"Le tissu est agréable mais les coutures semblent fragiles",NEGATIVE,avis_mitigé,"avis mixte, reproche final (coutures) non capté"
+"Je ne regrette vraiment pas d'avoir choisi cette marque",POSITIVE,négation,
+"Un service incroyable : trois heures d'attente pour rien",NEGATIVE,ironie,
+"Le restaurant est propre, mais les portions sont minuscules",NEGATIVE,avis_mitigé,"avis mixte, reproche final (portions) non capté"
+"Ce livre m'a captivé du début à la fin",POSITIVE,autre_domaine,
+"Le casque offre un son clair et une excellente autonomie",POSITIVE,,
+"Impossible de joindre le service après-vente, quelle efficacité !",NEGATIVE,ironie,
+"Ce film n'est pas mauvais, même si la fin est décevante",POSITIVE,négation,
+"Le logiciel est facile à utiliser mais il plante régulièrement",NEGATIVE,avis_mitigé,
+"Le joueur a réalisé une performance remarquable aujourd'hui",POSITIVE,autre_domaine,
+"Je n'ai jamais reçu un produit aussi mal emballé",NEGATIVE,négation,
+"Les chaussures sont confortables mais la couleur ne correspond pas aux photos",NEGATIVE,avis_mitigé,"avis mixte, reproche final (couleur) non capté"
+"Bravo, une livraison en retard de deux semaines, c'est parfait !",NEGATIVE,ironie,
+"Le médecin a pris le temps d'écouter toutes mes questions",POSITIVE,autre_domaine,
+"Le cours était mal organisé et les exercices étaient incompréhensibles",NEGATIVE,autre_domaine,
