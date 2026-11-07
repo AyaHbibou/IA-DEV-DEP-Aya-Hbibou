@@ -1043,14 +1043,13 @@ python -m pytest -q
 **Obtenu** :
 
 ```text
-À compléter
+2 failed
 ```
 
-- [ ] Conforme
+- [X] Conforme
 
 **Commentaire** (que réclame chacun des deux échecs ?) :
 
-> À compléter.
 
 ![T35](captures/tp6-t35-pytest.png)
 
@@ -1068,10 +1067,10 @@ python src/predict.py "Livraison rapide, produit conforme, très satisfait"
 **Obtenu** :
 
 ```text
-À compléter
+ 1 failed,,positive (confiance 78%)
 ```
 
-- [ ] Conforme
+- [X] Conforme
 
 **Commentaire** (à quoi sert le fichier de compatibilité ?) :
 
